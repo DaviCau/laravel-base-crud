@@ -1,0 +1,209 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;
+
+700&display=swap);* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.main-content {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.main-content .load-more {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
+.main-content .load-more button {
+  padding: 10px 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #0282f9;
+  border: transparent;
+}
+
+.main-content .comics-container {
+  position: relative;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.main-content .comics-container h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 10px 25px;
+  font-size: 30px;
+  background-color: #0282f9;
+}
+
+.main-content .comics-container .card {
+  width: 15%;
+  margin-bottom: 50px;
+}
+
+.main-content .comics-container .card img {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.main-content .comics-container .card figcaption {
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-top {
+  background-size: cover;
+  height: 370px;
+  overflow: hidden;
+}
+
+.footer-top .links {
+  height: 370px;
+  margin: 15px 0 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer-top .links ul {
+  list-style: none;
+  margin-right: 50px;
+}
+
+.footer-top .links ul .list-title {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px 0 15px;
+}
+
+.footer-top .links ul a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer-top .links ul a:hover {
+  text-decoration: underline;
+}
+
+.footer-top .logo-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 370px;
+}
+
+.footer-bottom {
+  background-color: #303030;
+  padding: 30px;
+}
+
+.footer-bottom .sign-up button {
+  background-color: transparent;
+  padding: 15px;
+  border: solid 3px #0282f9;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer-bottom .socials {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 30%;
+}
+
+.footer-bottom .socials .social-links {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom .socials .social-links .list-title {
+  color: #0282f9;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  background-color: white;
+}
+
+.header img {
+  height: 80px;
+}
+
+.header .nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header .nav ul li {
+  margin: 0 15px;
+}
+
+.header .nav ul li a {
+  height: 120px;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  border-top: solid 5px transparent;
+  border-bottom: solid 5px transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .nav ul li a:hover {
+  color: #0282f9;
+  border-bottom: solid 5px #0282f9;
+}
+
+.header .nav ul li a .active {
+  color: #0282f9;
+  border-bottom: solid 5px #0282f9;
+}
+
+.jumbotron {
+  height: 400px;
+}
+

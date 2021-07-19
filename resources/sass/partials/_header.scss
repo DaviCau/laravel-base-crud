@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    background-color: $textColor;
+
+    img {
+        height: 80px;
+    }
+    
+    .nav {
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+
+            li {
+                margin: 0 15px;
+
+                a {
+                    height: 120px;
+                    font-size: 14px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: $textColor;
+                    border-top: solid 5px transparent;
+                    border-bottom: solid 5px transparent;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &:hover {
+                        color: $btnColor;
+                        border-bottom: solid 5px $btnColor;
+                    }
+
+                    .active {
+                        color: $btnColor;
+                        border-bottom: solid 5px $btnColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.jumbotron {
+    height: 400px;
+}

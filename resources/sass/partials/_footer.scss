@@ -1,0 +1,81 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+    
+.footer-top {
+    background-size: cover;
+    height: 370px;
+    overflow: hidden;
+    
+    .links {
+        height: 370px;
+        margin: 15px 0 50px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        ul {
+            list-style: none;
+            margin-right: 50px;
+            .list-title {
+                color: $textColor;
+                font-weight: bold;
+                font-size: 20px;
+                padding: 20px 0 15px;
+            }
+            a {
+                color: rgba($color: $textColor, $alpha: 0.7);
+                text-decoration: none;
+                font-size: 12px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .logo-bg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 370px;
+    }
+}
+
+.footer-bottom {
+    background-color: $backFooter;
+    padding: 30px;
+
+    .sign-up button {
+        background-color: transparent;
+        padding: 15px;
+        border: solid 3px $btnColor;
+        color: $textColor;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 30%;
+
+        .social-links {
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .list-title {
+                color: $btnColor;
+                font-size: 20px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
