@@ -1,14 +1,18 @@
 <footer>
     <div class="footer-top" style="background-image: url('{{ asset("img/footer-bg.jpg") }}')">
         <div class="container footer-container">
-            {{-- <div class="links">
-                <ul v-for="(section, index) in footerLinks" :key="index">
-                    <li class="list-title">{{section.sectionTitle}}</li>
-                    <li v-for="(link, indexLink) in footerLinks[index].sectionLinks" :key="indexLink">
-                        <a :href="link.url">{{link.text}}</a>
-                    </li>
-                </ul>
-            </div> --}}
+            <div class="links">
+                @foreach ($footerLinks as $item)
+                    <ul>
+                        <li class="list-title">{{$item['sectionTitle']}}</li>
+                        @foreach ($item['sectionLinks'] as $link)
+                            <li>
+                                <a :href="{{$link['url']}}">{{$link['text']}}</a>
+                            </li>
+                        @endforeach
+                    </ul>
+                @endforeach
+            </div>
             <div class="logo-bg">
                 <img src="{{ asset("img/dc-logo-bg.png") }}" alt="logo dc">
             </div>

@@ -5,12 +5,12 @@
         <div class="container">
             <div class="comics-container">
                 <h2>CURRENT SERIES</h2>
-                {{-- @foreach ($comics as $item)
+                @foreach ($comics as $item)
                     <figure class="card">
                         <img src="{{ $item["thumb"] }}" :alt="{{$item["series"]}}">
                         <figcaption>{{ $item["series"] }}</figcaption>
                     </figure>
-                @endforeach --}}
+                @endforeach
             </div>
             <div class="load-more">
                 <button>LOAD MORE</button>

@@ -4,9 +4,11 @@
   
         <div class="nav">
             <ul>
-                {{-- <li v-for="(link, index) in links" :key=index>
-                    <a :href="link.url" :class="link.current ? 'active' : ''">{{link.text}}</a>
-                </li> --}}
+                @foreach ($headerLinks as $item)
+                    <li>
+                        <a :href="{{$item["url"]}}">{{$item["text"]}}</a>
+                    </li>
+                @endforeach
             </ul>
         </div>
     </div>
