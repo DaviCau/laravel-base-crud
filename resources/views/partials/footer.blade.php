@@ -7,7 +7,7 @@
                         <li class="list-title">{{$item['sectionTitle']}}</li>
                         @foreach ($item['sectionLinks'] as $link)
                             <li>
-                                <a :href="{{$link['url']}}">{{$link['text']}}</a>
+                                <a href="{{$link['url']}}">{{$link['text']}}</a>
                             </li>
                         @endforeach
                     </ul>

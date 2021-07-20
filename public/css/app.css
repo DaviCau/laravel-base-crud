@@ -15,6 +15,12 @@ body {
   margin: auto;
 }
 
+.home_title {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 50px;
+}
+
 .main-content {
   background-color: #1c1c1c;
   color: white;

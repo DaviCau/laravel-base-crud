@@ -4,11 +4,12 @@
   
         <div class="nav">
             <ul>
-                @foreach ($headerLinks as $item)
-                    <li>
-                        <a :href="{{$item["url"]}}">{{$item["text"]}}</a>
-                    </li>
-                @endforeach
+                <li>
+                    <a href="{{ route("home") }}" class="{{ Route::currentRouteName()=='home' ? 'active' : '' }}">Home</a>
+                </li>
+                <li>
+                    <a href="{{ route("comics.index") }}" class="{{ Route::currentRouteName()=='comics.index' ? 'active' : '' }}">Comics</a>
+                </li>
             </ul>
         </div>
     </div>
