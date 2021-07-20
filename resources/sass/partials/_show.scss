@@ -1,0 +1,32 @@
+.separator {
+    height: 70px;
+    background-color: $btnColor;
+    position: relative;
+
+    .active-comic-img {
+        width: 150px;
+        position: relative;
+        left: 15%;
+        top: -175px;
+        border: solid 1px white;
+    
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.comic-desc {
+    padding: 60px 0;
+    width: 70%;
+
+    h2 {
+        color: #003f5e;
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    p {
+        color: #65605b;
+        font-size: 14px;
+    }
+}

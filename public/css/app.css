@@ -62,6 +62,8 @@ body {
 .main-content .comics-container .card {
   width: 15%;
   margin-bottom: 50px;
+  color: white;
+  text-decoration: none;
 }
 
 .main-content .comics-container .card img {
@@ -73,7 +75,7 @@ body {
      object-position: top;
 }
 
-.main-content .comics-container .card figcaption {
+.main-content .comics-container .card h3 {
   text-transform: uppercase;
   margin-top: 20px;
 }
@@ -211,5 +213,39 @@ body {
 
 .jumbotron {
   height: 400px;
+}
+
+.separator {
+  height: 70px;
+  background-color: #0282f9;
+  position: relative;
+}
+
+.separator .active-comic-img {
+  width: 150px;
+  position: relative;
+  left: 15%;
+  top: -175px;
+  border: solid 1px white;
+}
+
+.separator .active-comic-img img {
+  width: 100%;
+}
+
+.comic-desc {
+  padding: 60px 0;
+  width: 70%;
+}
+
+.comic-desc h2 {
+  color: #003f5e;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.comic-desc p {
+  color: #65605b;
+  font-size: 14px;
 }
 
