@@ -83,11 +83,11 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Comic $comic)
     {
         $footerLinks = config('footerLinks');
 
-        return view('comics.edit', compact('footerLinks'));
+        return view('comics.edit', compact('footerLinks', 'comic'));
     }
 
     /**
@@ -97,9 +97,14 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Comic $comic)
     {
-        //
+
+        $data = $request->all();
+        $comic->update($data); // ricordarsi di aggiungere il $fillable al Model
+        
+        return redirect()
+            ->route('comics.show', $comic->id);
     }
 
     /**
@@ -108,8 +113,12 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request, Comic $comic)
     {
-        //
+        $comic->delete();
+
+        return redirect()
+            // ->route('beers.index', ['page' => $request->get('page')])
+            ->route('comics.index');
     }
 }

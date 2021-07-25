@@ -39,6 +39,8 @@
             margin-bottom: 50px;
             color: $textColor;
             text-decoration: none;
+            display: flex;
+            flex-direction: column;
     
             img {
                 height: 200px;

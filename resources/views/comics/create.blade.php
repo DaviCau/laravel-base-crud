@@ -2,7 +2,7 @@
 
 @section('main-content')
 <div class="container">
-    <form action="{{ route('comics.store') }}" method="post">
+    <form action="{{ route('comics.store') }}" method="POST">
         @csrf
         
         <div class="form-group">
