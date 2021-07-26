@@ -2,9 +2,9 @@
 
 @section('main-content')
 <div class="container">
-    <form action="{{ route('comics.store') }}" method="POST">
+    <form action="{{ route('comics.update', $comic->id) }}" method="POST">
         @csrf
-        {{-- @method('PATCH') --}}
+        @method('PATCH')
         <div class="form-group">
             <label for="title">Titolo</label>
             <input type="text" class="form-control" name="title" id="title" placeholder="Inserisci titolo" value="{{ old('title', $comic->title) }}">
